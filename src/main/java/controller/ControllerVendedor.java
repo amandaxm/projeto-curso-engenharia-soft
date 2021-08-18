@@ -5,6 +5,8 @@
  */
 package controller;
 
+import model.ModelProduto;
+
 /**
  *
  * @author veste
@@ -12,11 +14,11 @@ package controller;
 public class ControllerVendedor {
 //    private String numCaixa;
     
-    public Boolean adicionarProduto(String venda, String produto) {
+    public Boolean adicionarProduto(String venda, ModelProduto produto) {
         return false;
     }
     
-    public Boolean removerProduto(String venda, String produto) {
+    public Boolean removerProduto(String venda, ModelProduto produto) {
         return false;
     }
     
@@ -36,7 +38,7 @@ public class ControllerVendedor {
         return false;
     }
     
-    public Boolean pesquisarProduto(String produto) {
+    public Boolean pesquisarProduto(ModelProduto produto) {
         return false;
     }
 }
