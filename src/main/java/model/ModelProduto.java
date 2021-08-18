@@ -5,6 +5,8 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author guilherme
@@ -16,6 +18,8 @@ public class ModelProduto {
     private String nome;
     private float valor;
     private String descricao;
+    
+    private ArrayList<ModelProduto> produtos;
     
     public ModelProduto(double peso, int quantidade, String nome, float valor, String descricao) {
         this.id = id;
