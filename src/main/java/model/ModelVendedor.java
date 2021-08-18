@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author veste
+ * @author matheus
  */
 public class ModelVendedor extends ModelUsuario {
     private String numCaixa;
