@@ -19,4 +19,5 @@ public class ModelVendedor extends ModelUsuario {
     public void setNumCaixa(String numCaixa) {
         this.numCaixa = numCaixa;
     }
+    
 }
