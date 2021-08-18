@@ -17,6 +17,15 @@ public class ModelProduto {
     private float valor;
     private String descricao;
     
+    public ModelProduto(double peso, int quantidade, String nome, float valor, String descricao) {
+        this.id = id;
+        this.peso = peso;
+        this.quantidade = quantidade;
+        this.nome = nome;
+        this.valor = valor;
+        this.descricao = descricao;
+    }
+    
     public int getId(){
         return this.id;
     }

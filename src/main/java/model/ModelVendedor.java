@@ -7,43 +7,22 @@ package model;
 
 /**
  *
- * @author veste
+ * @author matheus
  */
-public class ModelVendedor {
-    private String id;
-    private String nome;
-    private String email;
-    private String senha;
-    private String cpf;
+public class ModelVendedor extends ModelUsuario {
     private String numCaixa;
 
     public ModelVendedor(String nome, String email, String senha, String cpf, String numCaixa, String id) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.senha = senha;
+        super(id, nome, email, senha, cpf);
         this.numCaixa = numCaixa;
-        this.cpf = cpf;
     }
     
-    public String getNome() {
-        return this.nome;
+    public String getNumCaixa() {
+        return this.numCaixa;
     }
     
-    public String getSenha() {
-        return this.senha;
-    }
-    
-    public String getEmail() {
-        return this.email;
-    }
-    
-    public String getCPF() {
-        return this.cpf;
-    }
-    
-    public String getId() {
-        return this.id;
+    public void setNumCaixa(String numCaixa) {
+        this.numCaixa = numCaixa;
     }
     public String getNumCaixa() {
         return this.numCaixa;
