@@ -7,17 +7,17 @@ package model;
 
 /**
  *
- * @author veste
+ * @author matheus
  */
 public class ModelVendedor {
-    private String id;
+    private int id;
     private String nome;
     private String email;
     private String senha;
     private String cpf;
     private String numCaixa;
 
-    public ModelVendedor(String nome, String email, String senha, String cpf, String numCaixa, String id) {
+    public ModelVendedor(String nome, String email, String senha, String cpf, String numCaixa, int id) {
         this.id = id;
         this.nome = nome;
         this.email = email;
