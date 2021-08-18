@@ -5,7 +5,7 @@
  */
 package model;
 
-import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class ModelProdutoTest {
     private int id = 1;
-    private double peso = 3.12;
+    private float peso = (float)3.12;
     private int quantidade=14;
     private String nome ="Paçoca";
     private float valor = (float) 0.25;
@@ -27,7 +27,6 @@ public class ModelProdutoTest {
   return new  ModelProduto(peso,quantidade,nome,valor,descricao);
   }
    
-
     @Test
     public void testGetId() {
         var produto = obterProduto();
@@ -39,7 +38,7 @@ public class ModelProdutoTest {
     @Test
     public void testGetPeso() {
         var produto = obterProduto();
-        produto.setPeso((float) peso);
+        produto.setPeso(peso);
         var pesoRetornado = produto.getPeso();
         assertTrue(peso== pesoRetornado);
     }
