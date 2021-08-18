@@ -143,6 +143,11 @@ public class ViewCliente extends javax.swing.JFrame {
 
         jbtnSalvarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/18/save.png"))); // NOI18N
         jbtnSalvarProduto.setText("Salvar Produto");
+        jbtnSalvarProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnSalvarProdutoActionPerformed(evt);
+            }
+        });
 
         jbtnEditarProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/18/edit.png"))); // NOI18N
         jbtnEditarProdutos.setText("Editar Produto");
@@ -322,6 +327,10 @@ public class ViewCliente extends javax.swing.JFrame {
     private void jtfNomeFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfNomeFornecedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtfNomeFornecedorActionPerformed
+
+    private void jbtnSalvarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSalvarProdutoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnSalvarProdutoActionPerformed
 
     /**
      * @param args the command line arguments
