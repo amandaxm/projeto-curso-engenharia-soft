@@ -23,12 +23,14 @@ public class ModelProdutoTest {
     
     public ModelProdutoTest() {
     }
-  
+  public ModelProduto obterProduto(){
+  return new  ModelProduto(peso,quantidade,nome,valor,descricao);
+  }
    
 
     @Test
     public void testGetId() {
-        var produto = new ModelProduto();
+        var produto = obterProduto();
         produto.setId(id);
         var idRetornado = produto.getId();
         assertTrue(id== idRetornado);
@@ -36,7 +38,7 @@ public class ModelProdutoTest {
 
     @Test
     public void testGetPeso() {
-        var produto = new ModelProduto();
+        var produto = obterProduto();
         produto.setPeso((float) peso);
         var pesoRetornado = produto.getPeso();
         assertTrue(peso== pesoRetornado);
@@ -44,7 +46,7 @@ public class ModelProdutoTest {
 
     @Test
     public void testGetQuantidade() {
-        var produto = new ModelProduto();
+        var produto = obterProduto();
         produto.setQuantidade(quantidade);
         var qtdRetornada = produto.getQuantidade();
         assertTrue(quantidade== qtdRetornada);
@@ -52,7 +54,7 @@ public class ModelProdutoTest {
 
     @Test
     public void testGetNome() {
-         var produto = new ModelProduto();
+         var produto = obterProduto();
         produto.setNome(nome);
         var nomeRetornado = produto.getNome();
         assertTrue(nome== nomeRetornado);
@@ -60,7 +62,7 @@ public class ModelProdutoTest {
 
     @Test
     public void testGetValor() {
-         var produto = new ModelProduto();
+         var produto = obterProduto();
         produto.setValor(valor);
         var valorRetornado = produto.getValor();
         assertTrue(valor== valorRetornado);
@@ -68,7 +70,7 @@ public class ModelProdutoTest {
 
     @Test
     public void testGetDescricao() {
-        var produto = new ModelProduto();
+        var produto = obterProduto();
         produto.setDescricao(descricao);
         var descricaoRetornada = produto.getDescricao();
         assertTrue(descricao== descricaoRetornada);
