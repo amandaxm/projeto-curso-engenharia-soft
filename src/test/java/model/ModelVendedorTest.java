@@ -30,8 +30,6 @@ public class ModelVendedorTest {
        var nomeRetornado = vendedor.getNome();
        assertTrue(nomeRetornado==nome);
     }
-
-
    
     @Test
     public void testGetCPF() {

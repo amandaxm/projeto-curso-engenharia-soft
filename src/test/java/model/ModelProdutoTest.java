@@ -23,9 +23,10 @@ public class ModelProdutoTest {
     
     public ModelProdutoTest() {
     }
-  public ModelProduto obterProduto(){
-  return new  ModelProduto(peso,quantidade,nome,valor,descricao);
-  }
+    
+    public ModelProduto obterProduto(){
+        return new  ModelProduto(peso,quantidade,nome,valor,descricao);
+    }
    
     @Test
     public void testGetId() {
@@ -74,6 +75,4 @@ public class ModelProdutoTest {
         var descricaoRetornada = produto.getDescricao();
         assertTrue(descricao== descricaoRetornada);
     }
-
-   
 }
