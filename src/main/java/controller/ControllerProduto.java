@@ -23,5 +23,6 @@ public class ControllerProduto {
     
     public ArrayList<ModelProduto> listarProdutosController(){
         // buscar lista de produtos
+        return null;
     }
 }

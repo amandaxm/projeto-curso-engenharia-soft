@@ -12,7 +12,7 @@ package view;
 public class ViewProduto extends javax.swing.JFrame {
 
     /**
-     * Creates new form ViewCliente
+     * Creates new form ViewProduto
      */
     public ViewProduto() {
         initComponents();
