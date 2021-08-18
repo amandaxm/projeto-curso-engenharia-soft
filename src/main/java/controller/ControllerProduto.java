@@ -5,6 +5,9 @@
  */
 package controller;
 
+import java.util.ArrayList;
+import model.ModelProduto;
+
 /**
  *
  * @author guilherme
@@ -18,7 +21,8 @@ public class ControllerProduto {
         // alterar produto
     }
     
-    public ArrayList<Produto> listarProdutosController(){
+    public ArrayList<ModelProduto> listarProdutosController(){
         // buscar lista de produtos
+        return null;
     }
 }
