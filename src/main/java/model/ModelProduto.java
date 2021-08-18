@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -16,6 +13,8 @@ public class ModelProduto {
     private String nome;
     private float valor;
     private String descricao;
+    
+    private ArrayList<ModelProduto> produtos;
     
     public ModelProduto(double peso, int quantidade, String nome, float valor, String descricao) {
         this.id = id;

@@ -18,7 +18,7 @@ public class ModelVendedorTest {
     private String cpf = "1450114343";
     private String numCaixa = "1313";    
    
-   
+
     
      @Test
     public void testGetNumCaixa() {
