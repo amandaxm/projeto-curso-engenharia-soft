@@ -45,4 +45,7 @@ public class ModelVendedor {
     public String getId() {
         return this.id;
     }
+    public String getNumCaixa() {
+        return this.numCaixa;
+    }
 }
