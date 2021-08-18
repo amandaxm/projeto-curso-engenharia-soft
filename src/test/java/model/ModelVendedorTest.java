@@ -18,43 +18,7 @@ public class ModelVendedorTest {
     private String cpf = "1450114343";
     private String numCaixa = "1313";    
    
-    @Test
-    public void testGetEmail() {
-       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
-       var emailRetornado = vendedor.getEmail();
-       assertTrue(emailRetornado==email);
-    }
-     @Test
-    public void testGetNome() {
-       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
-       var nomeRetornado = vendedor.getNome();
-       assertTrue(nomeRetornado==nome);
-    }
-
-
    
-    @Test
-    public void testGetCPF() {
-       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
-       var cpfRetornado = vendedor.getCPF();
-       assertTrue(cpf==cpfRetornado);
-       
-    }
-
-  
-    @Test
-    public void testGetId() {
-       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
-       var idRetornado = vendedor.getId();
-       assertTrue(id==idRetornado);
-    }
-    
-     @Test
-    public void testGetSenha() {
-       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
-       var senhaRetornada = vendedor.getSenha();
-       assertTrue(senha==senhaRetornada);
-    }
     
      @Test
     public void testGetNumCaixa() {
@@ -62,5 +26,14 @@ public class ModelVendedorTest {
        var numCaixaRetornado = vendedor.getNumCaixa();
        assertTrue(numCaixa==numCaixaRetornado);
     }
+    
+     @Test
+    public void testSetNumCaixa() {
+       var vendedor = new ModelVendedor(nome, email,senha ,cpf , numCaixa, id);
+       vendedor.setNumCaixa(numCaixa);
+       var numCaixaRetornado = vendedor.getNumCaixa();
+       assertTrue(numCaixa==numCaixaRetornado);
+    }
+    
     
 }
